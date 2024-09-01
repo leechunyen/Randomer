@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Number</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false">
+  <div class="content">
+    <div class="numInput">
+      <ion-label>Minimum</ion-label>
+      <ion-input id="ipmin" clear-input="true" mode="ios" placeholder="Minimum" inputmode="decimal" type="text"></ion-input>
+    </div>
+    <div class="numInput">
+      <ion-label>Maximum</ion-label>
+      <ion-input id="ipmax" clear-input="true" mode="ios" placeholder="Maximum" inputmode="decimal" type="text"></ion-input>
+    </div>
+    <ion-button (click)="random()" mode="ios" expand="block">Random</ion-button>
+    <div>
+      <ion-label>Random Number</ion-label>&nbsp;
+      <ion-label id="outputNum">0</ion-label>
+    </div>
+  </div>
+</ion-content>

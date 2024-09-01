@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false">
+  <div class="content">
+    <div class="ips">
+      <ion-label>Title</ion-label>
+      <ion-input id="iptt" clear-input="true" mode="ios" placeholder="Title" inputmode="text" type="text"></ion-input>
+    </div>
+    <div class="ips">
+      <ion-label>Detail</ion-label>
+      <ion-input id="ipdt" clear-input="true" mode="ios" placeholder="Detail" inputmode="text" type="text"></ion-input>
+    </div>
+    <div class="btns">
+      <ion-button (click)="save()" mode="ios" color="primary">Save</ion-button>
+      <ion-button (click)="cancel()" mode="ios" color="secondary">Cancel</ion-button>
+      <ion-button (click)="delete()" mode="ios" color="danger">Delete</ion-button>
+    </div>
+  </div>
+</ion-content>
